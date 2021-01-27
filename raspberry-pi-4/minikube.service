@@ -8,7 +8,7 @@ ExecStart=/usr/local/bin/minikube start
 User=sander
 Group=sander
 TimeoutStartSec=600
-TimeoutStopSec=120
+TimeoutStopSec=240
 
 [Install]
 WantedBy=multi-user.target
