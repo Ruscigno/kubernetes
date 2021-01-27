@@ -3,12 +3,14 @@ Description=Runs minikube on startup
 After=docker.service
 
 [Service]
-Type=forking
+Type=oneshot
 ExecStart=/usr/local/bin/minikube start
+ExecStop=/usr/local/bin/minikube stop
 User=sander
 Group=sander
 TimeoutStartSec=600
 TimeoutStopSec=240
+RemainAfterExit=yes
 
 [Install]
 WantedBy=multi-user.target
