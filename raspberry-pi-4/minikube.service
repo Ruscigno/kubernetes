@@ -1,0 +1,15 @@
+[Unit]
+Description=Minikube service
+[Servjce]
+After=network.target
+StartLimitIntervalSec=0[Service]
+Type=simple
+Restart=always
+RestartSec=5
+User=sander
+ExecStart=/usr/local/bin/minikube
+WorkingDirectory=/home/sander
+TimeoutStopSec=120
+
+[Install]
+WantedBy=multi-user.target
