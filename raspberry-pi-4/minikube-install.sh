@@ -1,4 +1,7 @@
-sudo useradd -s /bin/bash -d /home/sander/ -m -G sudo sander
+#sudo useradd -s /bin/bash -d /home/sander/ -m -G sudo sander
+#sudo passwd sander
+#su - sander
+
 sudo apt update
 sudo apt upgrade -y
 sudo apt autoremove
