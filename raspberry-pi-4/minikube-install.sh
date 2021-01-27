@@ -3,6 +3,8 @@
 #su - sander
 #passwd -l ubuntu
 
+hostnamectl set-hostname c182-server
+sudo timedatectl set-timezone America/Regina
 apt update
 apt upgrade -y
 apt autoremove
