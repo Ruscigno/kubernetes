@@ -18,4 +18,4 @@ Flash it to the SD card.
 ### Essential step
 - Add the following to `/boot/cmdline.txt`, but make sure that you don’t add new lines.
 `cgroup_enable=cpuset cgroup_memory=1 cgroup_enable=memory`
-
+- Edit the file ./network-config and add your wi-fi credentials
